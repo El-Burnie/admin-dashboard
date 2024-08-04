@@ -34,6 +34,7 @@
     --dim-background: #BAB8B1;
     --bright-contrast: #358600;
     --dim-contrast: #570000;
+    --nav-bar-text-offset: 0.75rem
 }
 
 .container {
@@ -49,14 +50,31 @@
     grid-template-columns: 1fr 5fr;
     grid-template-rows: repeat(12, 1fr) 6fr;
     align-items: center;
+    justify-items: center;
     background-color: var(--main-color);
     color: var(--bright-background);
+    padding: 16px;
+    font-size: 1.25rem;
+}
+
+.nav-bar .title {
+    font-size: 1.75rem;
+    justify-self: start;
+    padding-left: var(--nav-bar-text-offset);
+}
+
+.nav-bar .nav-item {
+    justify-self: start;
+    padding-left: var(--nav-bar-text-offset);
 }
 
 .nav-bar .logo svg {
     fill: var(--bright-background);
+    height: 4rem;
 }
 
 .nav-bar .icon svg {
     fill: var(--bright-background);
+    height: 1.75rem;
+    padding-top: 0.4rem;
 }
