@@ -30,3 +30,14 @@
 :root {
     font-family: 'robotobold', sans-serif;
 }
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
+    height: 100vh;
+}
+
+.nav-bar {
+    grid-row: 1 / 3;
+}
