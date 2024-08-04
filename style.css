@@ -149,7 +149,6 @@
 .greeting-container .profile-image {
     height: calc(3*var(--header-icon-height));
     grid-row: 1 / 3;
-
 }
 
 .greeting {
@@ -160,4 +159,21 @@
 .user-name-and-handle {
     align-self: start;
     font-size: 1.75rem;
+}
+
+.action-buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.action-buttons-container button {
+    background-color: var(--main-color);
+    color: var(--bright-background);
+    border-style: none;
+    border-radius: 2rem;
+    width: 6rem;
+    padding: 0.75rem 0;
+    font-size: 1.1rem;
+
 }
