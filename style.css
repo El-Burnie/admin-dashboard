@@ -29,6 +29,11 @@
 
 :root {
     font-family: 'robotobold', sans-serif;
+    --main-color: #F04043;
+    --bright-background: #FFEAEC;
+    --dim-background: #BAB8B1;
+    --bright-contrast: #358600;
+    --dim-contrast: #570000;
 }
 
 .container {
@@ -44,4 +49,14 @@
     grid-template-columns: 1fr 5fr;
     grid-template-rows: repeat(12, 1fr) 6fr;
     align-items: center;
+    background-color: var(--main-color);
+    color: var(--bright-background);
+}
+
+.nav-bar .logo svg {
+    fill: var(--bright-background);
+}
+
+.nav-bar .icon svg {
+    fill: var(--bright-background);
 }
