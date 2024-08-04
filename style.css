@@ -31,9 +31,9 @@
     font-family: 'robotobold', sans-serif;
     --main-color: #F04043;
     --bright-background: #FFEAEC;
-    --dim-background: #BAB8B1;
+    --dim-background: #D8D5C8;
     --bright-contrast: #358600;
-    --dim-contrast: #570000;
+    --dim-contrast: #07090F;
     --nav-bar-text-offset: 0.75rem;
     --border-padding: 16px;
     --header-icon-height: 1.75rem;
@@ -87,6 +87,7 @@
     grid-template-rows: 2fr 3fr;
     align-items: center;
     padding: var(--border-padding) calc(2*var(--border-padding));
+    color: var(--dim-contrast);
 }
 
 .search-container {
@@ -105,7 +106,7 @@
     background-color: var(--dim-background);
     border-style: none;
     border: 1px solid var(--dim-background);
-    border-radius: 1rem;
+    border-radius: 1.5rem;
     padding: 0 1rem;
     font-family: 'robotoregular';
 }
@@ -113,4 +114,26 @@
 .search-bar:focus {
     outline: none;
     border: 1px solid var(--main-color);
+}
+
+.status-container {
+    display: flex;
+    gap: 1.5rem;
+    padding-right: 1rem;
+    justify-content: end;
+    align-items: center;
+}
+
+.status-container .icon svg {
+    height: var(--header-icon-height);
+    padding-top: 0.25rem;
+}
+
+.profile-image {
+    height: calc(2*var(--header-icon-height));
+    border-radius: 50%;
+}
+
+.user-name {
+    font-size: 1.25rem;
 }
