@@ -40,4 +40,8 @@
 
 .nav-bar {
     grid-row: 1 / 3;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: repeat(12, 1fr) 6fr;
+    align-items: center;
 }
