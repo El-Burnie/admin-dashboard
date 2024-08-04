@@ -32,6 +32,7 @@
     --main-color: #F04043;
     --bright-background: #FFEAEC;
     --dim-background: #D8D5C8;
+    --shadow: #77756E;
     --bright-contrast: #358600;
     --dim-contrast: #07090F;
     --nav-bar-text-offset: 0.75rem;
@@ -82,13 +83,19 @@
 }
 
 .header {
+    z-index: 1;
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 2fr 3fr;
     row-gap: 1rem;
     align-items: center;
     padding: var(--border-padding) calc(2*var(--border-padding));
+    background-color: var(--bright-background);
     color: var(--dim-contrast);
+}
+
+.shadow {
+    box-shadow: 0 3px 10px var(--shadow);
 }
 
 .search-container {
@@ -175,5 +182,8 @@
     width: 6rem;
     padding: 0.75rem 0;
     font-size: 1.1rem;
+}
 
+.main-content {
+    background-color: var(--dim-background);
 }
