@@ -30,7 +30,7 @@
 :root {
     font-family: 'robotobold', sans-serif;
     --main-color: #F04043;
-    --bright-background: #FFEAEC;
+    --bright-background: #fff7f7;
     --dim-background: #D8D5C8;
     --shadow: #77756E;
     --bright-contrast: #358600;
@@ -38,6 +38,7 @@
     --nav-bar-text-offset: 0.75rem;
     --border-padding: 16px;
     --header-icon-height: 1.75rem;
+    --main-content-gap: 16px;
 }
 
 .container {
@@ -185,5 +186,16 @@
 }
 
 .main-content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: var(--main-content-gap);
+    padding: var(--border-padding);
+    padding-top: calc(2*var(--border-padding));
     background-color: var(--dim-background);
+}
+
+.projects {
+    grid-row: 1 / 3;
+    
 }
