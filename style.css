@@ -88,7 +88,7 @@
 }
 
 .shadow {
-    box-shadow: 0 3px 3px var(--shadow);
+    box-shadow: 3px 3px 3px var(--shadow);
 }
 
 .search-container {
@@ -189,6 +189,7 @@
 
 .section-header {
     font-size: 1.25rem;
+    padding-bottom: calc(0.5*var(--main-content-gap));
 }
 
 .projects {
@@ -209,6 +210,8 @@
     padding: var(--border-padding);
     row-gap: 0.5rem;
     background-color: var(--bright-background);
+    border-left: 8px solid var(--bright-contrast);
+    border-radius: 8px;
 }
 
 .project-card .title {
