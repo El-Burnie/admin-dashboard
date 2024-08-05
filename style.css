@@ -32,7 +32,7 @@
     --main-color: #F04043;
     --bright-background: #fff7f7;
     --dim-background: #D8D5C8;
-    --shadow: #77756E;
+    --shadow: #a1a1a1;
     --bright-contrast: #358600;
     --dim-contrast: #07090F;
     --nav-bar-text-offset: 0.75rem;
@@ -96,7 +96,7 @@
 }
 
 .shadow {
-    box-shadow: 0 3px 10px var(--shadow);
+    box-shadow: 0 3px 3px var(--shadow);
 }
 
 .search-container {
@@ -195,7 +195,11 @@
     background-color: var(--dim-background);
 }
 
+.section-header {
+    font-size: 1.25rem;
+}
+
 .projects {
     grid-row: 1 / 3;
-    
 }
+
