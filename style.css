@@ -277,3 +277,8 @@
     border-top: 1px solid var(--dim-background);
     border-bottom: 1px solid var(--dim-background);
 }
+
+.trending {
+    display: grid;
+    grid-template-rows: min-content 1fr;
+}
