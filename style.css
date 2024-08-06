@@ -180,7 +180,7 @@
 
 .main-content {
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 4fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: var(--main-content-gap);
     padding: calc(2*var(--border-padding));
@@ -261,7 +261,7 @@
 
 .announcement-card .preview {
     font-family: 'robotoregular', sans-serif;
-    font-size: 0.75rem;
+    font-size: 0.70rem;
 }
 
 .announcement-card p {
